@@ -27,8 +27,8 @@
 		<p>Permitir repetidos:</p>
 		<input type="radio" name="Repetidos" value="Si">Si<input type="radio" name="Repetidos" value="No">No
 		<p>Numero de intentos:</p>
-		<input list="intentos" name="intentos">
-		<datalist id="intentos">
+		<input list="Nintentos" name="Nintentos">
+		<datalist id="Nintentos">
 			<option value="8">
 			<option value="10">
 			<option value="12">

@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post("/mastermind", "MastermindController@show");
+Route::post("/jugar", "MastermindController@juego");

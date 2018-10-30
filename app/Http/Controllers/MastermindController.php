@@ -9,8 +9,8 @@ use App\Http\Controllers\Controller;
 
 class MastermindController extends Controller
 {
-    public function show(){
-        return view('mastermind'[
+    public function show(Request $request){
+        return view('mastermind', [
         	'nombre'=>$request->input('nombre'),
         	'longitud'=>$request->input('longitud'),
         	'champis'=>$request->input('champis'),
