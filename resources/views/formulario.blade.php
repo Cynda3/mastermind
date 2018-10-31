@@ -27,12 +27,11 @@
 		<p>Permitir repetidos:</p>
 		<input type="radio" name="Repetidos" value="Si">Si<input type="radio" name="Repetidos" value="No">No
 		<p>Numero de intentos:</p>
-		<input list="Nintentos" name="Nintentos">
-		<datalist id="Nintentos">
-			<option value="8">
-			<option value="10">
-			<option value="12">
-		</datalist></br>
+		<select name="Nintentos">
+			<option value="8">8</option>
+			<option value="10">10</option>
+			<option value="12">12</option>
+		</select></br>
 		<input type="submit" name="Iniciar la partida" value="Iniciar partida">
 	</form>
 </body>
