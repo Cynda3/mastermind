@@ -7,14 +7,14 @@
 	<h1>¡Bienvenido al Mastermind!</h1>
 
 	<div>
-		<img src="/images/rojo.png" width="32px" height="32px">
-		<img src="/images/verde.png" width="32px" height="32px">
-		<img src="/images/fuego.png" width="32px" height="32px">
-		<img src="/images/hielo.png" width="32px" height="32px">
-		<img src="/images/gigante.png" width="32px" height="32px">
-		<img src="/images/reina.png" width="32px" height="32px">
-		<img src="/images/pingu.png" width="32px" height="32px">
-		<img src="/images/hoja.png" width="32px" height="32px">
+		<img src="/images/1.png" width="32px" height="32px">
+		<img src="/images/2.png" width="32px" height="32px">
+		<img src="/images/3.png" width="32px" height="32px">
+		<img src="/images/4.png" width="32px" height="32px">
+		<img src="/images/5.png" width="32px" height="32px">
+		<img src="/images/6.png" width="32px" height="32px">
+		<img src="/images/7.png" width="32px" height="32px">
+		<img src="/images/8.png" width="32px" height="32px">
 
 	</div>
 	<form action="mastermind" method="POST">
