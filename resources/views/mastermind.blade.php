@@ -8,55 +8,27 @@
 	<form action="jugar" method="POST">
 		@csrf
 		<p><b>Introduce un codigo:</b></p>
-		<div>
 			</br>
-			<select id="valor1">
-				<option value="rojo">rojo</option>
-				<option value="verde">verde</option>
-				<option value="fuego">fuego</option>
-				<option value="hielo">hielo</option>
-				<option value="gigante">gigante</option>
-				<option value="reina">reina</option>
-				<option value="pingu">pingu</option>
-				<option value="hoja">hoja</option>
-			</select>
-			<select id="valor2">
-				<option value="rojo">rojo</option>
-				<option value="verde">verde</option>
-				<option value="fuego">fuego</option>
-				<option value="hielo">hielo</option>
-				<option value="gigante">gigante</option>
-				<option value="reina">reina</option>
-				<option value="pingu">pingu</option>
-				<option value="hoja">hoja</option>
-			</select>
-			<select id="valor3">
-				<option value="rojo">rojo</option>
-				<option value="verde">verde</option>
-				<option value="fuego">fuego</option>
-				<option value="hielo">hielo</option>
-				<option value="gigante">gigante</option>
-				<option value="reina">reina</option>
-				<option value="pingu">pingu</option>
-				<option value="hoja">hoja</option>
-			</select>
-			<select id="valor4">
-				<option value="rojo">rojo</option>
-				<option value="verde">verde</option>
-				<option value="fuego">fuego</option>
-				<option value="hielo">hielo</option>
-				<option value="gigante">gigante</option>
-				<option value="reina">reina</option>
-				<option value="pingu">pingu</option>
-				<option value="hoja">hoja</option>
-			</select>
+		<div>
+			@for ($i=0; $i < session()->get('longitud'); $i++)
+            <select id="item">
+                <option value="rojo">rojo</option>
+                <option value="verde">verde</option>
+                <option value="fuego">fuego</option>
+                <option value="hielo">hielo</option>
+                <option value="gigante">gigante</option>
+                <option value="reina">reina</option>
+                <option value="pingu">pingu</option>
+                <option value="hoja">hoja</option>
+            </select>
+            @endfor
 		</div>
 		<div>
 			</br></br>
 			<input type="submit" name="comprobar" value="Comprobar">
 		</div>
 	</form>
-	<h2>Jugador: {{$nombre}}</h2>
-	Intento: x/{{$Nintentos}}
+	<h2>Jugador: {{session()->get('nombre')}}</h2>
+	Intento: x/{{session()->get('Nintentos')}}
 </body>
 </html>

@@ -10,13 +10,13 @@ use App\Http\Controllers\Controller;
 class MastermindController extends Controller
 {
     public function show(Request $request){
-        return view('mastermind', [
-        	'nombre'=>$request->input('nombre'),
-        	'longitud'=>$request->input('longitud'),
-        	'champis'=>$request->input('champis'),
-        	'repetir'=>$request->input('repetir'),
-        	'Nintentos'=>$request->input('Nintentos')
-        ]);
+        $request->session()->put('nombre', $request->input('nombre'));
+        $request->session()->put('longitud', $request->input('longitud'));
+        $request->session()->put('items', $request->input('items'));
+        $request->session()->put('repetir', $request->input('repetir'));
+        $request->session()->put('Nintentos', $request->input('Nintentos'));
+        
+        return view('mastermind');
     }
 }
 

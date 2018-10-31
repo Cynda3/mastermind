@@ -21,9 +21,9 @@
 		@csrf
 		Nombre: <input type="text" name="nombre">
 		<p>Longitud de la clave:</p>
-		<input type="radio" name="longitus" value="4">4<input type="radio" name="longitud" value="5">5
-		<p>Numero de champis posibles:</p>
-		<input type="radio" name="champis" value="4">4<input type="radio" name="champis" value="5">5<input type="radio" name="champis" value="6">6<input type="radio" name="champis" value="7">7<input type="radio" name="champis" value="8">8
+		<input type="radio" name="longitud" value="4">4<input type="radio" name="longitud" value="5">5
+		<p>Numero de items posibles:</p>
+		<input type="radio" name="items" value="4">4<input type="radio" name="items" value="5">5<input type="radio" name="items" value="6">6<input type="radio" name="items" value="7">7<input type="radio" name="items" value="8">8
 		<p>Permitir repetidos:</p>
 		<input type="radio" name="Repetidos" value="Si">Si<input type="radio" name="Repetidos" value="No">No
 		<p>Numero de intentos:</p>
